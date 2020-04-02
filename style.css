@@ -1,0 +1,32 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+div > p{
+	text-align: center;
+	margin: 10px;
+}
+
+div > ul > li {
+	list-style: none;
+	border: 1px solid rgba(0,0,0,0.1);
+	text-align: center;
+	margin: 0px auto;
+	margin-bottom: 20px;	
+	width: 150px;
+	border-radius: 50%;
+
+}
+div > ul >li > a {
+	width: 150px;
+	display: inline-block;
+	padding: 10px 20px;
+	color: blue;
+	text-decoration: none;
+}
+div > ul >li > a:hover {
+	border-radius: 50%;
+	box-shadow: inset 0px 0px 5px #0a87f5, 0px 0px 15px #85c3fa,
+	inset 0 0 25px #b6dbfc;
+}
