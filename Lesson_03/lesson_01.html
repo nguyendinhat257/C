@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>lesson 01</title>
+	<style type="text/css">
+		p {
+			font-size: 18px;
+			line-height: 26px;
+		}
+	</style>
+</head>
+<body>
+<div>
+	<div>
+		<h1>Bài 5</h1>
+		<p>
+			#include < iostream > <br>
+using namespace std;<br>
+int main() {<br>
+	int N, M;<br>
+	cout << "nhap so N: ";<br>
+	cin >> N;<br>
+	cout << "nhap so M: ";<br>
+	cin >> M;<br>
+	int c =0;<br>
+	while (N > 0) {<br>
+		c++;<br>
+		N -= 1;<br>
+		if (c % M ==0) {<br>
+			N += 1;<br>
+		};<br>
+	};<br>
+	cout << c;<br>
+	system("pause");<br>
+	return 0;<br>
+}<br>
+
+--------------------------------------------------------------------------------------------------------------------------------------<br>
+<h1>Bài 1</h1>
+#include < iostream ><br>
+using namespace std;<br>
+int main() {<br>
+	int N,t = 0;<br>
+	cout << "Nhap N: ";<br>
+	cin >> N;<br>
+	for (int i = 2; i <= N; i += 2)<br>
+	{<br>
+		t += i;<br>
+	}<br>
+	cout << t;<br>
+	system("pause");<br>
+	return 0;<br>
+}<br>
+--------------------------------------------------------------------------------------------------------------------------------------<br>
+		<h1>Bài 2</h1>
+
+#include < iostream ><br>
+using namespace std;<br>
+int main() {<br>
+	int n,t=1;<br>
+	do {<br>
+		cout << "Nhap N: ";<br>
+		cin >> n;<br>
+	} while ((n < 0) || (n > 20));<br>
+	while (n > 1) {<br>
+		t *= n;<br>
+		n--;<br>
+	}<br>
+	cout << t;<br>
+	system("pause");<br>
+	return 0;<br>
+}<br>
+--------------------------------------------------------------------------------------------------------------------------------------<br>
+		<h1>Bài 3</h1>
+
+#include < iostream > <br>
+using namespace std;<br>
+int main() {<br>
+	int n;<br>
+	cout << "Nhap N: ";<br>
+	cin >> n;<br>
+	while (n > 0) {<br>
+		cout << n % 10 << endl;<br>
+		n = n / 10;<br>
+	}<br>
+	system("pause");<br>
+	return 0;<br>
+}<br>
+--------------------------------------------------------------------------------------------------------------------------------------<br>
+		<h1>Bài 4</h1>
+
+#include < iostream ><br>
+using namespace std;<br>
+int main() {<br>
+	int n,t=0;<br>
+	cout << "Nhap N: ";<br>
+	cin >> n;<br>
+	while (n > 0) {<br>
+		if ((n % 10) % 2 == 1) {<br>
+			t += ((n % 10) );<br>
+	 }<br>
+		n = n / 10;<br>
+	}<br>
+	cout << t;<br>
+	system("pause");<br>
+	return 0;<br>
+}<br>
+--------------------------------------------------------------------------------------------------------------------------------------
+<h1>Lí thuyết</h1>
+<br>1. while sử dụng với bài toán lặp với số lần không biết trước<br>
+do while sự dụng bài toán thực hiện khối lệnh trước khi kiểm tra<br>
+nó sẽ lặp cho đến khi điều kiện trong while bị sai.<br>
+ for: lặp với số lần biết trước<br>
+<br>
+2. cấu trúc lặp, vòng lặp sẽ dừng lại khi biểu thức điều kiện trong câu lệnh lặp, cấu trúc lặp bị sai<br>
+<br>
+3. trong khối lệnh của vòng lặp cần có câu lệnh liên quan đến biểu thức điều kiện làm thay đổi giá trị nhằm ảnh hưởng tới biểu thức điều kiện trong vòng lặp để thoát khỏi vòng lặp đúng lúc, thích hợp.<br>
+<br>
+4.for(int i= 2;i<=5;i+=2) <br>
+{<br>
+    cout<< i << endl;<br>
+}<br>
+// lần lặp 1: khi gặp câu lệnh này nó khởi tạo biến x lưu giá trị 2 vào vùng nhớ i quản lí, kiểm tra điều kiện i<=5 (đúng, i=2) thực hiện khối lệnh cout<< i <<  endl; "xuất giá trị của i là 2 ra màn hình và xuống dòng tăng giá trị i thêm 2 => i=4<br>
+lần lặp 2: quay lại kiểm tra biểu thức điều kiện i <=5 ( đúng, i=4) thực hiện khối lệnh cout<< i << endl; tăng giá trị i thêm 2 => i=6;<br>
+lặp 3: kiểm tra điều kiện i<=5 ( sai,i=6) thoát vòng lặp.<br>
+5 kết quả : <br>
+2345<br>
+345<br>
+45<br>
+5<br>
+6:  giống: thường nằm trong khối lệnh của vòng lặp<br>
+khác:<br>
+break: phá vỡ hoàn toàn vòng lặp chứa nó<br>
+continue: khi chương trình gặp câu lệnh này nó sẽ bỏ qua các câu lệnh dưới nó ở trong khối lệnh lặp<br>
+và tiếp tục vòng lặp tiếp theo.<br>
+</p>
+	<a href="../index.html">Quay về</a>
+	</div>
+</div>
+</body>
+</html>

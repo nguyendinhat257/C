@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>lesson 01</title>
+	<style type="text/css">
+		p {
+			font-size: 18px;
+			line-height: 26px;
+		}
+	</style>
+</head>
+<body>
+<div>
+	<div>
+		<h1>Bài 1</h1>
+		<p>
+			#include < iostream > <br>
+#include < math.h ><br>
+using namespace std;<br>
+int main() {<br>
+	float a, b, c;<br>
+	cout << "PT bac 2 co dang: ax^2 + bx + c =0 ( a khac 0 )" << endl;<br>
+	do {<br>
+		cout << "Nhap a: ";<br>
+		cin >> a;<br>
+		cout << "Nhap b: ";<br>
+		cin >> b;<br>
+		cout << "Nhap c: ";<br>
+		cin >> c;<br>
+	} while (a == 0);<br>
+	float denta = b * b - 4 * a * c;<br>
+	if (denta > 0) {<br>
+		cout << "Phuong trinh co 2 nghiem phan biet" << endl;<br>
+		cout << (-b + sqrt(denta) / (2 * a)) << endl;<br>
+		cout << (-b - sqrt(denta) / (2 * a)) << endl;<br>
+	}<br>
+	else if (denta == 0) {<br>
+		cout << "PT co 1 nghiem kep: " << -b / 2*a << endl;<br>
+	}<br>
+	else<br>
+	{<br>
+		cout << "Phuong trinh vo nghiem" << endl;<br>
+	}<br>
+	system("pause");<br>
+	return 0;<br>
+}<br>
+		</p>
+		<h1>Bài 2</h1>
+		<p>
+			#include < iostream ><br>
+using namespace std;<br>
+int main() {<br>
+	float d;<br>
+	do {<br>
+		cout << "Nhap diem trung binh: ";<br>
+		cin >> d;<br>
+	} while ((d < 0) || (d > 10));<br>
+	if (d >= 8) {<br>
+		cout << "Hoc sinh gioi" << endl;<br>
+	} else if (d >= 6.5) <br>
+	{<br>
+		cout << "Hoc sinh tien tien" << endl;<br>
+	} else if ((d >= 5) && (d < 6.5))<br>
+	{<br>
+		cout << "Hoc sinh trung binh" << endl;<br>
+	} else if (( d>= 3.5) && (d<5))<br>
+	{<br>
+		cout << "Hoc sinh yeu" << endl;<br>
+	}<br>
+	else {<br>
+		cout << "Hoc sinh kem" << endl;<br>
+		}<br>
+	system("pause");<br>
+	return 0;<br>
+		</p>
+		<h1>Bài 3</h1>
+		<p>
+			#include < iostream ><br>
+using namespace std;<br>
+int main() {<br>
+	int thang;<br>
+	do {<br>
+		cout << "nhap thang hien tai:";<br>
+		cin >> thang;<br>
+	} while ((thang < 1) || (thang > 13));<br>
+	switch (thang)<br>
+	{<br>
+	case 1: case 3: case 5: case 7: case 8: case 10: case 12: {<br>
+		cout << "thang co 31 ngay";<br>
+		break;<br>
+	}<br>
+	case 4: case 6: case 9: case 11: {<br>
+		cout << "thang co 31 ngay";<br>
+		break;<br>
+	}<br>
+	case 2: {<br>
+		int nam;<br>
+		cout << "nhap nam hien tai";<br>
+		cin >> nam;<br>
+		if (nam % 4 == 0) {<br>
+			cout << "Nam nhuan, thang co 29 ngay";<br>
+		}<br>
+		else<br>
+		{<br>
+			cout << "Nam khong nhuan, thang co 28 ngay";<br>
+		}<br>
+	}<br>
+	}<br>
+		system("pause"); <br>
+		return 0; <br>
+}<br>
+		</p>
+	<a href="../index.html">Quay về</a>
+	</div>
+</div>
+</body>
+</html>
